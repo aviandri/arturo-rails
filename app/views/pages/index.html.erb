@@ -4,11 +4,14 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html">
-				<%= image_tag "logo4.png" %>
+				<a href="index.html" class="hidden-phone">
+					<%= image_tag "logo4.png" %>
 				</a>
 			</div>
 			<div class="navigation">
+				<a href="index.html" class="hidden-desktop">
+					<%= image_tag "logo4.png", :id => "logo-mobile" %>
+				</a>
 				<nav>
 				<ul class="nav pull-right">
 					<li class="current"><a href="#intro">Home</a></li>
@@ -16,7 +19,7 @@
 					<li><a href="#services">Services</a></li>
 					<li><a href="#works">Works</a></li>
 					<li><a href="#contact">Contact</a></li>					
-					<li><%= link_to "Gallery", page_path("gallery"), :class => "external" %></li>
+					<li><%= link_to "Gallery", galleries_path, :class => "external" %></li>
 					</ul>
 					</li>
 				</ul>
