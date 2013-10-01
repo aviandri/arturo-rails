@@ -42,6 +42,12 @@ gem 'fog', ' ~> 1.3.1'
 
 gem 'rmagick'
 
+gem 'unicorn'
+
+gem 'capistrano'
+
+gem 'rvm-capistrano'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
