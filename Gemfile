@@ -36,7 +36,7 @@ gem 'high_voltage'
 
 gem 'carrierwave'
 
-gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 gem 'fog', ' ~> 1.3.1'
 
