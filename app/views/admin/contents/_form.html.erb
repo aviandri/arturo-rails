@@ -1,0 +1,23 @@
+<%= semantic_form_for([:admin, @content], url: admin_content_path) do |f| %>
+
+	<%= f.inputs "Content Detail" do %>     	 
+		 <%= f.input :type, :as => :select, :collection => Content::Types %>
+		 <%= f.input :asset %>
+	<% end %>
+
+	<%= f.actions %>
+<% end %>
+
+<script type="text/javascript">
+	$("#content_type").change(function(){
+		if($(this).val() == 'Video'){
+			$("#content_asset").remove();
+			$("#content_asset_input").append("<input id='content_asset' name='content[asset]' type='text'>");
+		}else if($(this).val() == 'Photo'){
+			$("#content_asset").remove();
+			$("#content_asset_input").append("<input id='content_asset' name='content[asset]' type='file'>");
+			
+		}
+	});
+	
+</script>

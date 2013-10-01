@@ -1,0 +1,441 @@
+<header>
+<!-- start top -->
+<div id="topnav" class="navbar navbar-fixed-top default shadow">
+	<div class="navbar-inner">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+				<%= image_tag "logo4.png" %>
+				</a>
+			</div>
+			<div class="navigation">
+				<nav>
+				<ul class="nav pull-right">
+					<li class="current"><a href="#intro">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#works">Works</a></li>
+					<li><a href="#contact">Contact</a></li>					
+					<li><%= link_to "Gallery", page_path("gallery"), :class => "external" %></li>
+					</ul>
+					</li>
+				</ul>
+				</nav>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>
+<!-- end top -->
+</header>
+<!-- section intro -->
+<section id="intro">
+<div class="slogan">
+	<video id="intro-vid" class="vjs-tech" height="auto" poster="<%= asset_path 'poster.png' %>" controls autobuffer autoplay style="width:100%;height:auto;">
+		<source src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/video/vid.mp4" type="video/mp4">
+  		<source src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/video/vid.ogv" type="video/ogg">
+		<source src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/video/vid.webm" type="video/webm">
+  	</video>
+</div>
+</section>
+<!-- end intro -->
+<!-- Section about -->
+<section id="about" class="section">
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div class="heading">
+				<h3><span>About us</span></h3>
+			</div>
+			<div class="sub-heading-left">
+				<p>
+					 In 2010, our continual friendship in years past, sparked a serious observation  of the need to create an establishment that serves as a home for our  collaboration in the creative world. Arturo then was born not only as our home,  but also as a vehicle that we use to drive home our clients' needs. 
+				</p>
+				<p>
+					Rising to the challenge and thriving under pressure is what our current and  prospective clients can expect from us. We at Arturo are always ready to meet  and capture your imagination.  Arturo runs under the banner of PT. Arturo Imaji Indonesia. 
+				</p>
+				<p>
+					Based in <strong>Jakarta, Indonesia</strong>. We are the best creator of <strong>Photography</strong>, <strong>Videography</strong> and <strong>Aerial photography</strong> in Indonesia. 
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row profile">
+		<div class="span1">
+		</div>
+		<div class="span2">
+			<%= image_tag "dummies/team1.jpg", :class => "img-polaroid" %>
+			<div class="roles">
+				<h5><strong>Aditya Pudjo</strong></h5>
+			</div>
+		</div>
+		<div class="span2">
+			<%= image_tag "dummies/team2.jpg", :class => "img-polaroid" %>
+			<div class="roles">
+				<h5><strong>Yara Destani</strong></h5>
+			</div>
+		</div>
+		<div class="span2">
+			<%= image_tag "dummies/team3.jpg", :class => "img-polaroid" %>
+			<div class="roles">
+				<h5><strong>Aldi Almahdi</strong></h5>		
+			</div>
+		</div>
+		<div class="span2">
+			<%= image_tag "dummies/team4.jpg", :class => "img-polaroid" %>
+			<div class="roles">
+				<h5><strong>Imam Santoso</strong></h5>			
+			</div>
+		</div>
+		<div class="span2">
+			<%= image_tag "dummies/team5.jpg", :class => "img-polaroid" %>
+			<div class="roles">
+				<h5><strong>M. Efriko Nalendra</strong></h5>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</section>
+<!-- end section about -->
+<!-- section services -->
+<section id="services" class="section parallax dark">
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div class="heading">
+				<h3><span>Our services</span></h3>
+			</div>
+			<div class="sub-heading">
+				<p>
+					 What we are very well known best on :
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span4">
+			<div class="box aligncenter">
+				<div class="halftop">
+					<h4><strong>Photography</strong></h4>
+					<i class="icon-camera icon-4x"></i>
+				</div>				
+			</div>
+		</div>
+		<div class="span4">
+			<div class="box aligncenter">
+				<div class="halftop">
+					<h4><strong>Videography</strong></h4>
+					<i class="icon-facetime-video icon-4x"></i>
+				</div>				
+			</div>
+		</div>
+		<div class="span4">
+			<div class="box aligncenter">
+				<div class="halftop">
+					<h4><strong>Aerial photograpy</strong></h4>
+					<i class="icon-plane icon-4x"></i>
+				</div>			
+			</div>
+		</div>		
+	</div>
+</div>
+</section>
+<!-- end section services -->
+<!-- section works -->
+<section id="works" class="section gray-bg">
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div class="heading">
+				<h3><span>Recent works</span></h3>
+			</div>
+			<div class="sub-heading">
+				<p>
+					 We have a history of doing what our name implies, creating a visual language around the beliefs of the brands we work with.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span12">
+			<ul class="filter">
+				<li class="all active"><a href="#" class="btn btn-theme">Photos</a></li>
+			</ul>
+			<div class="clear">
+			</div>
+			<div class="row">
+				<ul class="portfolio-area da-thumbs">
+					<li class="portfolio-item" data-id="id-0" data-type="web">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/1.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/1.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="web">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/2.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/2.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="brand">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/3.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/3.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="photo">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/4.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/4.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="graphic">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/5.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/5.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="graphic">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/6.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/6.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="photo">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/7.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/7.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="ilustrator">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/8.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/8.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="ilustrator">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/9.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/9.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="ilustrator">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/15.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/15.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="ilustrator">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/11.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/12.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li class="portfolio-item" data-id="id-0" data-type="ilustrator">
+					<div class="span2">
+						<div class="thumbnail">
+							<div class="image-wrapp">
+								<img src="https://s3-ap-southeast-1.amazonaws.com/arturoweb/thumb/14.jpg" alt="Portfolio name" title="" />
+								<article class="da-animate da-slideFromRight" style="display: block;">
+								<span><a class="zoom" data-pretty="prettyPhoto" href="https://s3-ap-southeast-1.amazonaws.com/arturoweb/14.jpg">
+								<i class="icon-rounded icon-48 icon-zoom-in"></i>
+								</a></span>
+								</article>
+							</div>
+						</div>
+					</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- section works -->
+<!-- section contact -->
+<section id="contact" class="section">
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div class="heading">
+				<h3><span>Get in touch</span></h3>
+			</div>
+			<div class="sub-heading">
+				<p>
+					 Lorem ipsum dolor sit amet, mutat paulo simul per no, assum fastidii vituperata eam no.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		
+		<div class="span6">
+			<h4><i class="icon-suitcase"></i><strong>Our office</strong></h4>
+			<p>
+				 Feel free to ask if you have any question regarding our services or if you just want to say Hello, we would love to hear from you.
+			</p>
+			<div class="dotted_line">
+			</div>
+			<p>
+				<strong>PT. Arturo Imaji Indonesia</strong>
+			</p>
+			<p>
+				Jl. MPR XI no.7 Cipete, Jakarta Indonesia 12430
+			</p>
+			<p>
+				<span><i class="icon-phone"></i><strong>Phone:</strong> (021)71202901</span>
+			</p>
+			<p>
+				<span><i class="icon-envelope-alt"></i><strong>Email:</strong>adityapudjo@arturoimaji.com</span>
+			</p>
+			<div class="dotted_line">
+			</div>
+			<!-- <h4><i class="icon-group"></i><strong>Connect to our social profiles</strong></h4>
+			<div class="social-links">
+				<ul class="social-links">
+					<li><a href="#" title="Twitter"><i class="icon-square icon-32 icon-twitter"></i></a></li>
+					<li><a href="#" title="Facebook"><i class="icon-square icon-32 icon-facebook"></i></a></li>
+					<li><a href="#" title="Google plus"><i class="icon-square icon-32 icon-google-plus"></i></a></li>
+					<li><a href="#" title="Linkedin"><i class="icon-square icon-32 icon-linkedin"></i></a></li>
+					<li><a href="#" title="Pinterest"><i class="icon-square icon-32 icon-pinterest"></i></a></li>
+				</ul>
+			</div> -->
+		</div>
+	</div>
+</div>
+</section>
+<!-- end section contact -->
+<!-- section bottom -->
+<section id="bottom" class="section">
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div class="aligncenter">
+				<div class="tweet">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- end section bottom -->
+<footer>
+<div class="verybottom">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="aligncenter">
+					<div class="logo">
+						<a class="brand" href="index.html">
+						<%= image_tag "logo2.png" %>
+						</a>
+					</div>
+					<p>
+						 &copy; ItoZ labs Inc 2013 
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+
+<script type="text/javascript">
+	// var myPlayer = videojs("intro-vid");	
+	// myPlayer.on("ended", function(){
+	// 	alert("ended");
+	// 	$("intro-vid").posterImage.show() 
+	// }); 	
+</script>

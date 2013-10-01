@@ -1,0 +1,29 @@
+<%= stylesheet_link_tag "galleria.fullscreen" %>
+<div id="galleria">
+
+        <% @contents.each do |content| %>
+            <% if content.type == "Video" %>            
+                <%= link_to content.asset do %>
+                    <span class="video"></span>
+                <% end %>                                    
+                <a href="http://vimeo.com/72880574"><span class="video"></span></a>
+            <% elsif content.type == "Photo" %>
+                <%= link_to content.asset.url do %>
+                    <%= image_tag(content.asset.thumb.url, :data => {:big => content.asset.url}) %>                          
+                <% end %>                                    
+            <% end %>
+        <% end %>
+        
+    </div>
+    <script>
+
+    // Load the Fullscreen theme
+    Galleria.loadTheme("<%= asset_path 'galleria.fullscreen.min.js' %>");
+
+    // Initialize Galleria
+    Galleria.run('#galleria',{
+        transition : 'fade',
+        imageCrop : 'portrait'
+    });
+    </script>
+    </body>
