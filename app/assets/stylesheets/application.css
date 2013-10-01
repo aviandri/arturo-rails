@@ -15,5 +15,7 @@
  *= require animate
  *= require video-js.min
  *= require default
+ *= require font-awesome
+ *= require overwrite
  *= require style
  */
