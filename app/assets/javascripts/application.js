@@ -27,6 +27,7 @@
 //= require video
 //= require jquery.videoBG
 //= require galleria-1.2.9.min
+//= require galleria.fullscreen.min
 //= require custom
 
 
