@@ -1,4 +1,4 @@
-<%= semantic_form_for([:admin, @content], url: admin_content_path) do |f| %>
+<%= semantic_form_for([:admin, @content], :url => @content.new_record? ? admin_contents_path : admin_content_path(@content), :html => { :multipart => true }) do |f| %>
 
 	<%= f.inputs "Content Detail" do %>     	 
 		 <%= f.input :type, :as => :select, :collection => Content::Types %>
